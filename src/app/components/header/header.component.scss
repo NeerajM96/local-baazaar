@@ -34,3 +34,29 @@
         
     }
 }
+
+.audio{
+    width: 80px;
+    cursor: pointer;
+}
+
+.play-audio:hover{
+    color: #80ffb0;
+}
+.pause-audio:hover{
+    color:#e03841;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        ul{
+            margin-bottom: 10px;
+        }
+    }
+    .audio{
+        width: 36px;
+    }
+}

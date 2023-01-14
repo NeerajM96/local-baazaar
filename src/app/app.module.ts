@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CountDownComponent } from './components/count-down/count-down.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CountDownComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule

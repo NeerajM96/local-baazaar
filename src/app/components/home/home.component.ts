@@ -5,13 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit{
-  
-
+export class HomeComponent implements OnInit {
+  showLoader = true;
   ngOnInit(): void {
+    this.hideLoader()
+  }
 
-    
-    
+  hideLoader() {
+    setTimeout(() => {
+      this.showLoader = false
+    }, 3500)
   }
 
 

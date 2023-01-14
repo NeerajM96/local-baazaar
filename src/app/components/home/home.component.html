@@ -1,10 +1,9 @@
-
-
 <div class="home">
     <app-header></app-header>
-    <div class="home-content">
+    <app-loader *ngIf="showLoader"></app-loader>
+    <div class="home-content" *ngIf="!showLoader">
         <div class="message">
-            <h1>
+            <h1> Welcome To
                 <span class="text-primary">
                     Local</span>Baazaar
             </h1>
@@ -12,7 +11,6 @@
         </div>
         <app-count-down></app-count-down>
         <div class="btn">Contact Us</div>
-        
-        
+
     </div>
 </div>

@@ -1,16 +1,38 @@
-.container{
-    .count-down{
+.container {
+    .count-down {
         display: flex;
         border: 4px solid #fff;
         width: max-content;
         padding: 10px;
-        .date-card{
+
+        .date-card {
             display: flex;
             flex-direction: column;
             border: 1px solid #00fb62;
             padding: 2px 5px;
             margin: 2px 20px;
             text-align: center;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    .container {
+        .count-down {
+            display: flex;
+            border: 4px solid #fff;
+            width: max-content;
+            padding: 10px;
+
+            .date-card {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #00fb62;
+                padding: 2px 5px;
+                margin: 2px 5px;
+                text-align: center;
+            }
         }
     }
 }

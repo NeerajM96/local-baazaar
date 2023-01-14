@@ -10,6 +10,12 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
+                <li class="audio">
+                    <span  (click)="toggleAudio()">
+                        <i class="fa-solid fa-volume-high primary-color"  [class.play-audio] = "audioFlag" *ngIf="audioFlag"></i>
+                        <i class="fa-solid fa-volume-xmark danger-color" [class.pause-audio] = "!audioFlag" *ngIf="!audioFlag"></i>
+                    </span>
+                </li>
             </ul>
         </nav>
 
