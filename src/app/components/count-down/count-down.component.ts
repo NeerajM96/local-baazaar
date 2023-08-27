@@ -15,9 +15,9 @@ export class CountDownComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.date = new Date("28 July, 2023 00:00:00").getTime();
+    this.date = new Date("28 December, 2023 00:00:00").getTime();
     this.setDate()
-    this.day1 = new Date("30 July, 2023 00:00:00").getDate()
+    this.day1 = new Date("30 December, 2023 00:00:00").getDate()
   }
 
   setDate() {
